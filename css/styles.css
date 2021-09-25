@@ -33,20 +33,13 @@ a {
 .container {
 	display: flex;
 }
+.main {
+	margin-left: 16.2em;
+}
 
 /* ------ ASIDE ------ */
 
-.aside__nav {
-	padding: 0;
-	list-style: none;
-	font-size: 1.1em;
-	margin: 0;
-	font-weight: 500;
-}
-.aside__nav li a {
-	color: #4d4e53;
-}
-.aside__title {
+.header__title {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
@@ -59,23 +52,70 @@ a {
 	border-right: 3px solid rgba(0, 22, 22, 0.4);
 	z-index: 100;
 }
-.aside__title h1 {
+.header__title h1 {
 	font-weight: 600;
 	margin: 10px;
+}
+
+@media (max-width: 815px) {
+	.header__title {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-height: 54px;
+		height: 100%;
+		border: none;
+		margin: 15px auto;
+	}
+	.container {
+		display: block;
+	}
 }
 
 .aside {
 	position: fixed;
 	top: 118px;
 	left: 0;
+	bottom: 0;
 	width: 300px;
 	border-right: 3px solid rgba(0, 22, 22, 0.4);
-	height: 100vh;
-	overflow: auto;
+	max-height: 100%;
+	overflow-y: auto;
+}
+.aside__nav {
+	padding: 0;
+	list-style: none;
+	font-size: 1.1em;
+	margin: 0;
+	font-weight: 500;
+}
+.aside__nav li a {
+	color: #4d4e53;
 }
 .nav-link {
 	display: block;
 	padding: 10px 30px;
 	border-top: 1px solid #4d4e53;
 	cursor: pointer;
+}
+.nav-link:last-of-type {
+	border-bottom: 1px solid;
+}
+@media (max-width: 815px) {
+	.aside {
+		width: 100%;
+		max-height: 209px;
+		border: 1px solid;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		margin-top: 10px;
+	}
+}
+
+/* ------ MAIN ------ */
+
+.info {
+	padding: 20px;
 }
