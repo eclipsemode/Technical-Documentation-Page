@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -39,27 +39,35 @@ a {
 .aside__nav {
 	padding: 0;
 	list-style: none;
-	margin-top: 75px;
 	font-size: 1.1em;
+	margin: 0;
+	font-weight: 500;
 }
 .aside__nav li a {
 	color: #4d4e53;
 }
 .aside__title {
 	display: block;
-	margin: 0;
+	margin: 0 auto;
 	text-align: center;
-	font-size: 0.9em;
 	position: fixed;
 	top: 0;
 	left: 0;
 	background: white;
-	width: inherit;
+	font-size: 0.9em;
+	width: 300px;
 	border-right: 3px solid rgba(0, 22, 22, 0.4);
 	z-index: 100;
 }
+.aside__title h1 {
+	font-weight: 600;
+	margin: 10px;
+}
+
 .aside {
 	position: fixed;
+	top: 118px;
+	left: 0;
 	width: 300px;
 	border-right: 3px solid rgba(0, 22, 22, 0.4);
 	height: 100vh;
