@@ -2,22 +2,24 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Open Sans', Arial, sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: "Open Sans", Arial, sans-serif;
 	color: #4d4e53;
-    font-size: 0.96em;
-    min-width: 350px;
-    margin: 0;
+	font-size: 0.96em;
+	min-width: 350px;
+	margin: 0;
 	line-height: 1.5;
-    padding: 0;
+	padding: 0;
 	scroll-behavior: smooth;
 	-webkit-scroll-behavior: smooth;
 }
-h1, h2 {
+h1,
+h2 {
 	color: black;
 }
 a {
@@ -25,8 +27,8 @@ a {
 	color: black;
 }
 .wrapper {
-    max-width: 100%;
-    overflow: hidden;
+	max-width: 100%;
+	overflow: hidden;
 }
 .container {
 	display: flex;
@@ -34,9 +36,8 @@ a {
 
 /* ------ ASIDE ------ */
 
-
 .aside__nav {
-	padding: 0; 
+	padding: 0;
 	list-style: none;
 	margin-top: 75px;
 	font-size: 1.1em;
@@ -63,7 +64,6 @@ a {
 	border-right: 3px solid rgba(0, 22, 22, 0.4);
 	height: 100vh;
 	overflow: auto;
-	
 }
 .nav-link {
 	display: block;
