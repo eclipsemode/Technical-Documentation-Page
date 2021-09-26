@@ -33,8 +33,13 @@ a {
 .container {
 	display: flex;
 }
-.main {
+#main-doc {
 	margin-left: 16.2em;
+}
+@media (max-width: 815px) {
+	#main-doc {
+		margin-left: inherit;
+	}
 }
 
 /* ------ ASIDE ------ */
@@ -82,14 +87,14 @@ a {
 	max-height: 100%;
 	overflow-y: auto;
 }
-.aside__nav {
+#nav {
 	padding: 0;
 	list-style: none;
 	font-size: 1.1em;
 	margin: 0;
 	font-weight: 500;
 }
-.aside__nav li a {
+#nav li a {
 	color: #4d4e53;
 }
 .nav-link {
@@ -116,6 +121,24 @@ a {
 
 /* ------ MAIN ------ */
 
-.info {
-	padding: 20px;
+.main-section {
+	padding: 0 35px;
+}
+.info__title {
+	font-size: 1.8em;
+}
+.info__article {
+	margin: 15px 25px;
+}
+.article-list__item {
+	margin: 15px 20px;
+}
+.code__article {
+	display: block;
+	white-space: pre-line;
+	line-height: 2;
+	margin: 10px 35px;
+	padding: 15px;
+	background-color: #f7f7f7;
+	border-radius: 5px;
 }
